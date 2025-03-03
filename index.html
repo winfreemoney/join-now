@@ -1,0 +1,467 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>ফ্রিতে 🎰 Spin করে আমি পুরষ্কার পেয়েছি! 🎉💰 তুমিও চেষ্টা করতে পার! 🔥 ১০০% রিয়েল ভাবে পেমেন্ট দিচ্ছে! 💵✅ </title>
+    <head>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1414/1414309.png">
+
+<script>
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault(); // Right Click বন্ধ করবে
+});
+
+document.addEventListener("keydown", function (event) {
+    if (event.ctrlKey && (event.key === "u" || event.key === "U" || event.key === "i" || event.key === "I")) {
+        event.preventDefault(); // CTRL + U & CTRL + Shift + I Block
+    }
+    if (event.key === "F12") {
+        event.preventDefault(); // F12 Block
+    }
+});
+</script>
+
+
+</head>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #eacfc8;
+            flex-direction: column;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+      
+ #navbar, #navbar-iframe {
+    display: none !important;
+    visibility: hidden;
+    height: 0;
+}
+        .wheel-container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Banner styles */
+        .banner {
+            width: 728px;
+            height: 90px;
+            margin: 10px 0;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+
+        /* Add an example banner image */
+        .banner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .wheel {
+            width: 90vw;
+            height: 90vw;
+            max-width: 300px;
+            max-height: 300px;
+            border-radius: 50%;
+            border: 10px solid red;
+            overflow: hidden;
+            position: relative;
+            transition: transform 4s ease-out;
+            background-color: black;
+        }
+
+        .spin-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background: gold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 200px;
+        }
+      
+      
+    .comment-container {
+        margin-top: 20px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .comment {
+        display: flex;
+        margin-bottom: 15px;
+    }
+      #comments {
+    max-height: 300px; /* কমেন্ট সেকশনের জন্য উচ্চতা নির্ধারণ */
+    overflow-y: auto;  /* স্ক্রলিং সক্রিয় করতে */
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+    .user-info {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .user-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .user-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .user-name {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .comment-time {
+        font-size: 12px;
+        color: #999;
+    }
+
+    .user-comment {
+        font-size: 14px;
+        color: #333;
+    }
+
+
+        .winning-message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: d62f03;
+            text-align: center;
+            display: none;
+        }
+
+        .share-message {
+            font-size: 16px;
+            color: d62f03;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .share-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #0078FF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* New styles for the Bkash input section */
+        .bkash-input {
+            margin-top: 20px;
+            display: none;
+            text-align: center;
+        }
+
+        .bkash-input input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 250px;
+        }
+
+        .bkash-input button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Popup Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .modal button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wheel-container">
+        
+          <div class="banner">
+     <!-- নিচের লাইনে ব্যানার এড কোড দিন -->
+    
+
+</div>
+     
+
+<p style="color: white; font-size: 18px; margin-top: 10px; text-align: center;"> <b>Spin করে জিতে নাও হাজার হাজার টাকা</b></p>
+
+
+        <canvas class="wheel" id="wheel"></canvas>
+        <button class="spin-btn" onclick="spinWheel()"><b>Spin করুন</b></button>
+        <div class="winning-message" id="winningMessage"></div>
+        <div class="share-message" id="shareMessage"></div>
+        <button class="share-btn" id="shareButton" onclick="shareOnMessenger()">Share on Messenger</button>
+        
+        <!-- Bkash Input Section (Hidden initially) -->
+        <div class="bkash-input" id="bkashInput">
+            <input id="bkashNumber" placeholder="Enter Bkash Number" type="text" />
+            <button onclick="submitBkashNumber()">Submit</button>
+        </div>
+
+      
+      
+      
+      <!--Comment-->
+      <div class="comment-container" id="commentSection">
+    <div class="comment">
+        <div class="user-info">
+            <img alt="User" class="user-img" src="https://i.imgur.com/xFr7QLT.png" />
+            <div class="user-details">
+                <span class="user-name">রহুল আমিন</span>
+                <span class="comment-time">১০ মিনিট আগে</span>
+            </div>
+        </div>
+        
+        
+        <p class="user-comment">এই সাইটটি খুব ভালো।</p>
+    </div>
+    <div class="comment">
+        <div class="user-info">
+            <img alt="User" class="user-img" src="https://randomuser.me/api/portraits/men/5.jpg" />
+            <div class="user-details">
+                <span class="user-name">নাহিদুজ্জামান</span>
+                <span class="comment-time">৩ ঘণ্টা আগে</span>
+            </div>
+        </div>
+        <p class="user-comment">আমিও চেষ্টা করব!</p>
+    </div>
+    <div class="comment">
+        <div class="user-info">
+            <img alt="User" class="user-img" src="https://randomuser.me/api/portraits/men/6.jpg" />
+            <div class="user-details">
+                <span class="user-name">তানভীর আহমেদ</span>
+                <span class="comment-time">৪ ঘণ্টা আগে</span>
+            </div>
+        </div>
+        <p class="user-comment">এটা অনেক ভালো লেগেছে!</p>
+    </div>
+    <div class="comment">
+        <div class="user-info">
+            <img alt="User" class="user-img" src="https://randomuser.me/api/portraits/men/7.jpg" />
+            <div class="user-details">
+                <span class="user-name">ফাহিম আহমেদ</span>
+                <span class="comment-time">৫ ঘণ্টা আগে</span>
+            </div>
+        </div>
+        <p class="user-comment">এটি খুব সহজ এবং আকর্ষণীয়।</p>
+    </div>
+    <div class="comment">
+        <div class="user-info">
+            <img alt="User" class="user-img" src="https://randomuser.me/api/portraits/men/8.jpg" />
+            <div class="user-details">
+                <span class="user-name">রাশেদুল ইসলাম</span>
+                <span class="comment-time">৬ ঘণ্টা আগে</span>
+            </div>
+        </div>
+        <p class="user-comment">তোমার সাইটের ডিজাইন অসাধারণ!</p>
+    </div>
+    <div class="comment">
+        <div class="user-info">
+            <img alt="User" class="user-img" src="https://randomuser.me/api/portraits/men/9.jpg" />
+            <div class="user-details">
+                <span class="user-name">নুরুল আলম</span>
+                <span class="comment-time">৭ ঘণ্টা আগে</span>
+            </div>
+        </div>
+        <p class="user-comment">আমি এখানে অনেক কিছু শিখলাম!</p>
+    </div>
+    <div class="comment">
+        <div class="user-info">
+            <img alt="User" class="user-img" src="https://randomuser.me/api/portraits/men/10.jpg" />
+            <div class="user-details">
+                <span class="user-name">আব্দুল হালিম</span>
+                <span class="comment-time">৮ ঘণ্টা আগে</span>
+            </div>
+        </div>
+        <p class="user-comment">দারুণ সাইট! সবাই চেষ্টা করুক।</p>
+    </div>
+</div>
+
+
+        <div class="banner">
+ <!-- নিচের লাইনে ব্যানার এড কোড দিন -->
+
+</div>
+
+
+    <!-- Modal Popup -->
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <p>এডমিন গন যাচাই করে ২৪ ঘন্টার মধ্যে পেমেন্ট পাঠাবেন।</p>
+            <button onclick="redirectToLink()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById("wheel");
+        const ctx = canvas.getContext("2d");
+        const colors = ["#FF0000", "#FFD700", "#0000FF", "#008000", "#FFFFFF", "#FFC0CB", "#FFA500", "#800080", "#00FFFF"];
+        const values = ["১০০০৳", "৩০০০৳", "৫০০০৳", "৪০০০৳", "৮০০০৳", "৬০০০৳", "১০,০০০৳", "১০০৳", "৩০,০০০৳"];
+        const sections = values.length;
+        canvas.width = 300;
+        canvas.height = 300;
+
+        let currentRotation = 0;
+        let offsetCorrection = (360 / sections) * 1.5;
+
+        function drawWheel() {
+            const sliceAngle = (2 * Math.PI) / sections;
+            for (let i = 0; i < sections; i++) {
+                ctx.beginPath();
+                ctx.moveTo(150, 150);
+                ctx.arc(150, 150, 150, i * sliceAngle, (i + 1) * sliceAngle);
+                ctx.fillStyle = colors[i % colors.length];
+                ctx.fill();
+                ctx.stroke();
+                ctx.save();
+                
+                ctx.translate(150, 150);
+                ctx.rotate(i * sliceAngle + sliceAngle / 2);
+                ctx.textAlign = "right";
+                ctx.fillStyle = "black";
+                ctx.font = "bold 14px Arial";
+                ctx.fillText(values[i], 120, 10);
+                ctx.restore();
+            }
+
+            ctx.beginPath();
+            ctx.arc(150, 150, 30, 0, 2 * Math.PI);
+            ctx.fillStyle = "#333";
+            ctx.fill();
+            ctx.stroke();
+        }
+
+        drawWheel();
+
+        function spinWheel() {
+            let randDegree = Math.floor(2000 + Math.random() * 2000);
+            currentRotation += randDegree;
+            canvas.style.transform = `rotate(${currentRotation + offsetCorrection}deg)`;
+
+            setTimeout(() => {
+                let finalAngle = (360 - ((currentRotation + offsetCorrection) % 360)) % 360;
+                let sliceAngle = 360 / sections;
+                let winningIndex = Math.floor(finalAngle / sliceAngle);
+                let winAmount = values[winningIndex];
+
+                const winningMessage = document.getElementById("winningMessage");
+                
+                if (winAmount === "0$") {
+                    winningMessage.innerHTML = "Try again!";
+                } else {
+                    winningMessage.innerHTML = `আপনি পেয়েছেন: ${winAmount}`;
+                }
+                winningMessage.style.display = "block";
+
+                const shareMessage = document.getElementById("shareMessage");
+                shareMessage.innerHTML = "১০ জন বন্ধুর সাথে শেয়ার করে পুরষ্কারটি জিতে নিন";
+
+                setTimeout(() => {
+                    const shareButton = document.getElementById("shareButton");
+                    shareButton.style.display = "block";
+                }, 1000);
+
+            }, 4000);
+        }
+     
+
+    function shareOnMessenger() {
+            let message = encodeURIComponent("এই ল্যান্ডিং পেইজটি কেউ বিক্রি করবেন না"); // নিচের # এর জায়গায় এই ওয়েবসাইটের লিংক দিন
+            let messengerURL = `fb-messenger://share?link=https://earn-money-free.github.io/public/&app_id=1056320642924322`;
+
+    window.location.href = messengerURL;
+
+    setTimeout(() => {
+        document.getElementById("bkashInput").style.display = "block";
+    }, 10000);
+}
+
+
+        function submitBkashNumber() {
+            const bkashNumber = document.getElementById("bkashNumber").value;
+            if (bkashNumber) {
+                // Show modal popup
+                document.getElementById("myModal").style.display = "flex";
+            } else {
+                alert("Please enter a valid Bkash number.");
+            }
+        }
+
+        // Function to redirect after clicking OK
+        function redirectToLink() {
+            window.location.href = "#"; // #এর জায়গায় ডাইরেক্ট লিংক দিন
+        }
+
+        // Close modal when clicked outside of it
+        window.onclick = function(event) {
+            if (event.target == document.getElementById("myModal")) {
+                document.getElementById("myModal").style.display = "none";
+            }
+        }
+    </script>
+      <!--Social bar-->
+     
+</div></body>
+</html>
